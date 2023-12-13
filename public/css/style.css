@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #2d2d2d;
+}
+
+.container {
+    background-color: rgb(65, 65, 65);
+    box-shadow: rgba(0, 0, 0, 0.05) 5px 5px 10px;
+    border-radius: 22px;
+    margin: 128px auto;
+    padding: 24px;
+    height: 100%;
+    width: 80%;
+}
+
+.input_button {
+    border: none;
+    text-decoration: none;
+    background-color: #d740be;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: white;
+    border-radius: 6px;
+    transition: ease 300ms;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+.input_button:hover {
+    background-color: #f658ee;
+    color: white;
+    cursor: pointer;
+}
+
+.input_button:active {
+    background-color: #a82d77;
+    text-shadow: #d740be 5px 5px;
+}
+
+.input_text-field {
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 10px;
+    background-color: #222;
+    margin: 0;
+    border-radius: 8px;
+    height: 8px;
+    color: #999;
+    box-sizing: border-box;
+    padding: 24px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_page-title {
+    font-size: 30px;
+    margin: 6px 0;
+    color: #f572e3;
+}
+
+.text_sub {
+    font-size: 18px;
+    color: #cbcbcb;
+}
+
+.text_sub_grey {
+    font-size: 18px;
+    color: #9a9a9a;
+}
+
+.text_error {
+    font-size: 16px;
+    text-align: center;
+    color: #e01111;
+}
+
+.text_warning {
+    font-size: 16px;
+    text-align: center;
+    color: #e0cf11;
+}
+
+.text_success-text {
+    font-size: 16px;
+    text-align: center;
+    color: #11e014;
+}

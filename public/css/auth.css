@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 330px;
+}
+
+.text_page-title {
+    text-align: center;
+    margin: 8px;
+}
+
+form.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.login_top {
+    display: flex;
+    flex-direction: column;
+}
+
+.login_bottom {
+    display: flex;
+    justify-content: right;
+}
+
+.input_button {
+    margin: 6px 0;
+}
+
+.input_text-field {
+    width: 380px;
+    margin: 6px 0;
+    transition: 200ms ease;
+}
+
+.input_text-field:hover, .input_text-field:focus {
+    color: #f572e3;
+}
+
+.login_bottom {
+    height: max-content;
+}
