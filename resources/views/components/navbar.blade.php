@@ -1,5 +1,5 @@
 <nav id="navbar" class="sticky">
-    <ul>
+    <ul class="nav">
         <li><a class="nav" href="/">Home</a></li>
         <li><a class="nav" href="/songs">Songs</a></li>
 

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     width: 420px;
-    height: 330px;
+    height: 420px;
 }
 
 .text_page-title {
@@ -10,7 +10,7 @@
     margin: 8px;
 }
 
-form.login {
+.login {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,4 +43,20 @@ form.login {
 
 .login_bottom {
     height: max-content;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
 }

@@ -14,11 +14,11 @@
     @foreach($songs as $song)
         <x-songs.song-card :song="$song" />
     @endforeach
+</div>
     @endsection
     
     @section('pagination')
     <div class="container paginator_container">
         {{ $songs->links('vendor.pagination.default') }}
     </div>
-</div>
 @endsection
