@@ -39,7 +39,7 @@ Route::get('logout', function ()
     return Redirect::to('/');
 })->name('logout');
 
-Route::get('/u', [UserController::class, 'findYou']);
+Route::get('/u', [UserController::class, 'findYou'])->middleware('auth');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
