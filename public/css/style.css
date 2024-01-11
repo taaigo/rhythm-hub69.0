@@ -95,3 +95,91 @@ a {
     text-align: center;
     color: #11e014;
 }
+
+.paginator_container {
+    width: 700px;
+    margin-top: 8px;
+}
+
+.paginator_container {
+    padding: 0;
+    width: 40px;;
+}
+
+ul.pagination {
+    background: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+div.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li.disabled {
+    list-style-type: none;
+}
+
+a.pagination, span {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 22px;
+    margin: 6px;
+    color: #d2d2d2;
+    height: 26px;
+    margin-top: 26px;
+}
+
+span.pagination {
+    color: #ff7ff3;
+}
+
+a.pagination:hover {
+    color: #ff7ff3;
+}
+
+.arrow {
+    color: #ff7ff3;
+}
+
+span.arrow, a.arrow {
+font-size: 59px;
+}
+
+.arrow {
+    color: #d2d2d2;
+}
+
+span.greyed, span.greyed:hover {
+    cursor: default;
+    color: #545454;
+}
+
+#song_back_button {
+    width: 50px;
+    font-size: 18px;
+}
+
+.back_button {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid #f658ee60 1px;
+}
+
+#song_page_back_button_line {
+    display: flex;
+    border-bottom: #f572e47b solid 1px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}

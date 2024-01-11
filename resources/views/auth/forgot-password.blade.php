@@ -25,7 +25,7 @@
         <div class="login_bottom">
             <div class="flex items-center justify-end mt-4">
                 <x-primary-button class="input_button">
-                    {{ __('I forgor') }}
+                    {{ __('I forgor💀') }}
                 </x-primary-button>
             </div>
         </div>

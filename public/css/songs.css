@@ -3,7 +3,7 @@ a {
 }
 
 img {
-    background-size: cover;
+    object-fit: cover;
     transition: ease 500ms;
     border-radius: 15px;
     width: 110px;
@@ -21,10 +21,7 @@ img {
     justify-content: space-between;
 }
 
-.container_top {
-    display: flex;
-    flex-direction: row;
-}
+
 
 .arrange_flex {
     display: flex;
@@ -97,69 +94,4 @@ img {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
     justify-self: flex-end;
     text-align: right;
-}
-
-.paginator_container {
-    width: 700px;
-    margin-top: 8px;
-}
-
-.paginator_container {
-    padding: 0;
-    width: 40px;;
-}
-
-ul.pagination {
-    background: none;
-    box-shadow: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-div.pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-li.pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-a.pagination, span {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 22px;
-    margin: 6px;
-    color: #d2d2d2;
-    height: 26px;
-    margin-top: 26px;
-}
-
-span.pagination {
-    color: #ff7ff3;
-}
-
-a.pagination:hover {
-    color: #ff7ff3;
-}
-
-.arrow {
-    color: #ff7ff3;
-}
-
-span.arrow, a.arrow {
-font-size: 59px;
-}
-
-.arrow {
-    color: #d2d2d2;
-}
-
-span.greyed, span.greyed:hover {
-    cursor: default;
-    color: #545454;
 }
