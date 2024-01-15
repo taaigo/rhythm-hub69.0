@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Comment;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Redirect;
@@ -21,11 +23,17 @@ Route::get('/', function() {
     return view('home.landing-page');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/u/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/u/edit', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/u/edit', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
 Route::get('/songs', [ListingController::class, 'index']);
 Route::get('/songs/{id}', [ListingController::class, 'show']);
 
-Route::get('/users', [UserController::class, 'index']);
-Route::get('/u/{id}', [UserController::class, 'show']);
+Route::get('/users', [UserController::class, 'index'])->middleware('auth');
+Route::get('/u/{id}', [UserController::class, 'show'])->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -41,11 +49,6 @@ Route::get('logout', function ()
 
 Route::get('/u', [UserController::class, 'findYou'])->middleware('auth');
 
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
+Route::post('/songs/{id}', [ListingController::class, 'upload'])->middleware('auth');
 
 require __DIR__.'/auth.php';

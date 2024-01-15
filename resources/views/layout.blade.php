@@ -11,11 +11,15 @@
 </head>
 <body>
     <x-navbar />
-    <div class="container">
-        <div class="inner_container">
-            @yield('content')
+    <div class="tripple-section-container">
+        <div class="text_page-title">@yield('container-title')</div>
+        <div class="container">
+            <div class="inner_container">
+                @yield('content')
+            </div>
         </div>
+        @yield('pagination')
+    
     </div>
-    @yield('pagination')
 </body>
 </html>

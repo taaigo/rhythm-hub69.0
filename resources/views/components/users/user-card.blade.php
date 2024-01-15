@@ -1,6 +1,6 @@
 <a href="/u/{{$user->id}}"><div class="flex_element">
     <div class="image_gradient">
-        <img src="
+        <img class="usercard" src="
         @if (file_exists('media/profile_pictures/'.$user->id.'.jpg'))
         {{url('media/profile_pictures/'.$user->id.'.jpg') }}
         @else

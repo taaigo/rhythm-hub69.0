@@ -2,6 +2,6 @@
 
 @if ($messages)
         @foreach ((array) $messages as $message)
-            <li class="text_error">{{ $message }}</li>
+            <div class="text_error">{{ $message }}</div>
         @endforeach
 @endif

@@ -1,8 +1,12 @@
 .container {
     display: flex;
     justify-content: center;
+
+}
+
+.tripple-section-container {
     width: 420px;
-    height: 420px;
+    height: 475px;
 }
 
 .text_page-title {
@@ -59,4 +63,8 @@ li {
 
 ul {
     margin: 0;
+}
+
+.rember {
+    font-size: 18px;
 }

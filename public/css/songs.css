@@ -21,7 +21,9 @@ img {
     justify-content: space-between;
 }
 
-
+.tripple-section-container {
+    width: 57%;
+}
 
 .arrange_flex {
     display: flex;

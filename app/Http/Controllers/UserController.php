@@ -19,9 +19,15 @@ class UserController extends Controller
         $u = User::find($id);
 
         if ($u) {
-        return view('users.show', [
-            'user' => User::find($id),
-        ]);
+            if ($id == Auth::user()->id) {
+                return view('users.your-profile', [
+                    'user' => User::find($id),
+                ]);
+            } else {
+                return view('users.show', [
+                    'user' => User::find($id),
+                ]);
+            }
         }
     }
 

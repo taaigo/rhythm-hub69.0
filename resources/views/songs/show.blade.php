@@ -10,14 +10,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div id="song_page_back_button_line">
-            <a href="/songs" class="input_button back_button" id="song_back_button">↩</a>
+    <div class="center-everything">
+        <div class="container">
+            <div id="song_page_back_button_line">
+                <a href="/songs" class="input_button back_button" id="song_back_button">↩</a>
+            </div>
+            <x-songs.song-information :song="$song" />
         </div>
-        <x-songs.song-information :song="$song" />
     </div>
+        <div class="container">
+            <x-songs.comment-section :comments="$comments" :song="$song" />
+        </div>
     </div>
-    <x-songs.comment-section />
 </body>
 </html>
     

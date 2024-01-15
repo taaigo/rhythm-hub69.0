@@ -11,10 +11,9 @@ body {
     background-color: rgb(65, 65, 65);
     box-shadow: rgba(0, 0, 0, 0.05) 5px 5px 10px;
     border-radius: 22px;
-    margin: 128px auto;
+    margin: 0;
     padding: 24px;
     height: 100%;
-    width: 80%;
 }
 
 .input_button {
@@ -35,6 +34,14 @@ body {
     background-color: #f658ee;
     color: white;
     cursor: pointer;
+}
+
+.dangerous-button {
+    background-color: #e01111;
+}
+
+.dangerous-button:hover {
+    background-color: #bf0606;
 }
 
 .input_button:active {
@@ -63,14 +70,20 @@ a {
 }
 
 .text_page-title {
-    font-size: 30px;
-    margin: 6px 0;
+    font-size: 38px;
+    margin: 12px 0;
     color: #f572e3;
+}
+
+.text_sub-title {
+    font-size: 24px;
+    margin: 8px 0;
+    color: #ffbef6;
 }
 
 .text_sub {
     font-size: 18px;
-    color: #cbcbcb;
+    color: #ebebeb;
 }
 
 .text_sub_grey {
@@ -182,4 +195,13 @@ span.greyed, span.greyed:hover {
     border-bottom: #f572e47b solid 1px;
     margin-bottom: 8px;
     padding-bottom: 8px;
+}
+
+.tripple-section-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 100px;
 }

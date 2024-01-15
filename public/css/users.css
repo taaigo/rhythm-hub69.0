@@ -2,7 +2,7 @@ a {
     text-decoration: none;
 }
 
-img {
+img.usercard {
     position: relative;
     object-fit: cover;
     filter: brightness(50%);
@@ -37,6 +37,10 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(84,84,84,1) 100%
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.tripple-section-container {
+    width: 65%;
 }
 
 .arrange_flex {

@@ -8,6 +8,7 @@
     <div class="login">
         <div class="login_top">
             <div class="text_page-title">Forgor your password?</div>
+            <div class="text_sub">How does a retard forgor his password???</div>
             <x-input-error :messages="$errors->get('email')" />
 
             <!-- Session Status -->
@@ -30,5 +31,9 @@
             </div>
         </div>
     </div>
-    <style>.container { height: 175px; }</style>
+    <style>
+    .tripple-section-container { height: 190px; width: 480px }
+    .input_text-field { width: 100% }
+    .text_sub { text-align: center }
+    </style>
 @endsection

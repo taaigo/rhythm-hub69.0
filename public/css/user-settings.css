@@ -1,0 +1,23 @@
+.tripple-section-container {
+    width: 60%;
+}
+
+.input_text-field {
+    margin: 4px 0;
+}
+
+.input_button {
+    margin: 6px 0;
+}
+
+.text_sub-title {
+    margin-top: 28px;
+}
+
+.text_success-text {
+    text-align: left;
+}
+
+.text_error {
+    text-align: left;
+}

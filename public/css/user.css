@@ -1,6 +1,5 @@
-.profile {
-    display: flex;
-    justify-content: space-between;
+.container {
+    width: 100%;
 }
 
 .text_username {
@@ -17,3 +16,17 @@
     height: 160px;
 }
 
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+#song_page_back_button_line {
+    margin-bottom: 14px;
+}

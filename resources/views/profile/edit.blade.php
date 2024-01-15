@@ -1,29 +1,18 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Profile') }}
-        </h2>
-    </x-slot>
+@extends('layout')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div class="max-w-xl">
-                    @include('profile.partials.update-profile-information-form')
-                </div>
-            </div>
+@section('title', $user->username.'\'s profile')
+@section('container-title', 'User Settings')
+@section('style')
+<link rel="stylesheet" href="{{ asset('css/user-settings.css') }}">
+@endsection
 
-            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div class="max-w-xl">
-                    @include('profile.partials.update-password-form')
-                </div>
-            </div>
-
-            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div class="max-w-xl">
-                    @include('profile.partials.delete-user-form')
-                </div>
-            </div>
-        </div>
+@section('content')
+<div id="settings-container">
+    <div id="song_page_back_button_line">
+        <a href="/u" class="input_button back_button" id="song_back_button">↩</a>
     </div>
-</x-app-layout>
+    @include('profile.partials.update-profile-information-form')
+    @include('profile.partials.update-password-form')
+    @include('profile.partials.delete-user-form')
+</div>
+@endsection

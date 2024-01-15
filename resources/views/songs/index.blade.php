@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('title', 'songs')
+@section('container-title', 'Songs')
 @section('style')
 <link rel="stylesheet" href="{{ asset('css/songs.css') }}">
 @endsection
