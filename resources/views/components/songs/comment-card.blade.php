@@ -4,7 +4,7 @@
         <div id="user">
             <img class="comment_user_image" src="
             @if (file_exists('media/profile_pictures/'.$comment->user.'.jpg'))
-            {{ url('media/profile_pictures'.$comment->user) }}
+            {{ url('media/profile_pictures/'.$comment->user.'.jpg') }}
             @else
             {{url('media/profile_pictures/default.jpg') }}
             @endif
