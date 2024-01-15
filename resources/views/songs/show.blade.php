@@ -15,13 +15,15 @@
             <div id="song_page_back_button_line">
                 <a href="/songs" class="input_button back_button" id="song_back_button">↩</a>
             </div>
-            <x-songs.song-information :song="$song" />
+            <x-songs.song-information :username="$username" :song="$song" />
         </div>
     </div>
         <div class="container">
             <x-songs.comment-section :comments="$comments" :song="$song" />
         </div>
+        <div class="container paginator_container">
+            {{ $comments->links('vendor.pagination.default') }}
+        </div>
     </div>
 </body>
 </html>
-    

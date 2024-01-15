@@ -22,13 +22,14 @@ class ListingController extends Controller
 
     public function show($id) {
         $listing = Song::find($id);
-        $comments = DB::select("SELECT * FROM songcomments WHERE song='$id'");
+        $username = User::find($listing->submitter_id)->username;
 
 
         if ($listing) {
             return view('songs.show', [
                 'song' => $listing,
-                'comments' => $comments,
+                'comments' => Songcomments::where('song', $id)->paginate(15),
+                'username' => $username,
             ]);
         }
     }

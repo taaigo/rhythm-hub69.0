@@ -5,7 +5,7 @@
     </div>
     <div class="text_page-title">{{$song->title}}</div>
     <div class="text_sub">by {{$song->artist}}</div>
-    <x-usercard :song="$song" />
+    <x-usercard :username="$username" :song="$song" />
     @if (file_exists("media/song-audio/".$song->id.".flac"))
     <div class="song_audio-card">
         <audio id="audio-player" src="{{ asset('media/song-audio/'.$song->id.'.flac') }}"></audio>

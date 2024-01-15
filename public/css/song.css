@@ -150,3 +150,12 @@ div.date {
     justify-content: center;
 }
 
+.paginator_container {
+    width: 700px;
+    margin-top: 8px;
+}
+
+.paginator_container {
+    padding: 0;
+    width: 40px;;
+}

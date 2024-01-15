@@ -11,7 +11,7 @@
             ">
             <div class="username">{{$comment->username}}</div>
         </div>
-        <div id="date">{{$comment->created_at}}</div>
+        <div id="date">{{$comment->created_at->format('Y/m/d H:i')}}</div>
     </div>
     <div id="content">
         {{$comment->content}}

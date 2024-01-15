@@ -12,6 +12,6 @@
         <div class="user_info">
             <div class="user_username">{{$user->username}}</div>
         </div>
-        <div class="user_timestamp">User created on {{$user->created_at->toDateString()}}</div>
+        <div class="user_timestamp">User created on {{$user->created_at->format('Y/m/d')}}</div>
     </div>
 </div></a>
