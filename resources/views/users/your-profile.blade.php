@@ -20,7 +20,15 @@
         </div>
         <div class="flex_right">
             <a href="/u/edit" style="text-decoration: none"><div class="input_button">Edit Profile</div></a>
+        </div>    
+    </div>
+@if (!$user->description == NULL)
+    <div class="aboutme-section">
+        <div class="aboutme-container">
+            <div class="text_sub-title">About me</div>
+            <div id="profile-aboutme" class="aboutme-content text_sub">{{ $user->description }}</div>    
         </div>
     </div>
+@endif
 </div>
 @endsection

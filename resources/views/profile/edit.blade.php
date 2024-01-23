@@ -12,6 +12,7 @@
         <a href="/u" class="input_button back_button" id="song_back_button">↩</a>
     </div>
     @include('profile.partials.update-profile-information-form')
+    @include('profile.partials.update-description')
     @include('profile.partials.update-password-form')
     @include('profile.partials.delete-user-form')
 </div>

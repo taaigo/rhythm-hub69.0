@@ -30,3 +30,22 @@
 #song_page_back_button_line {
     margin-bottom: 14px;
 }
+
+.aboutme-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 24px;
+}
+
+.aboutme-content {
+    padding: 12px;
+    background-color: #222;
+    border-radius: 12px;
+}

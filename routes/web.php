@@ -7,6 +7,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\ListingController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\DescriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,8 +30,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/u/edit', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::patch('/u/edit/description', [DescriptionController::class, 'update'])->middleware('auth')->name('description.update');
+
 Route::get('/songs', [ListingController::class, 'index']);
-Route::get('/songs/{id}', [ListingController::class, 'show']);
+Route::get('/songs/{id}', [ListingController::class, 'show'])->name('profile.show');
 
 Route::get('/users', [UserController::class, 'index'])->middleware('auth');
 Route::get('/u/{id}', [UserController::class, 'show'])->middleware('auth');

@@ -21,3 +21,9 @@
 .text_error {
     text-align: left;
 }
+
+#update-profile-description {
+    width: 500px;
+    height: 250px;
+    max-width: 1103px;
+}
