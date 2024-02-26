@@ -1,0 +1,117 @@
+.tripple-section-container {
+    width: 60%;
+}
+
+.input_text-field {
+    margin: 4px 0;
+}
+
+input#x {
+    display: none;
+}
+
+.input_button {
+    margin: 6px 0;
+}
+
+.text_sub-title {
+    margin-top: 28px;
+}
+
+.text_success-text {
+    text-align: left;
+}
+
+.text_error {
+    text-align: left;
+}
+
+#update-profile-description {
+    width: 500px;
+    height: 250px;
+    max-width: 1103px;
+}
+
+.textfield {
+    background-color: #222;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: #ebebeb;
+    font-size: 18px;
+}
+
+.trix-button-row {
+    background-color: #2f2f2f;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 50px;
+    border: none;
+}
+
+trix-toolbar .trix-button-group {
+    border: none;
+}
+
+trix-toolbar .trix-button-group, trix-toolbar .trix-button-group-spacer {
+    margin: 10px;
+}
+
+trix-toolbar .trix-button:not(:first-child) {
+    border: none;
+}
+
+trix-toolbar .trix-button {
+    color: rgb(255, 168, 238);
+    border-radius: 12px;
+}
+
+trix-toolbar .trix-button:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.trix-button {
+    color: #ebebeb;
+    border: none;
+}
+
+trix-toolbar .trix-button {
+    background: none;
+    border: none;
+}
+
+.trix-button-group {
+    color: #ebebeb;
+}
+
+span {
+    display: flex;
+}
+
+trix-toolbar .trix-button.trix-active {
+    background-color: #d740be;
+}
+
+trix-toolbar .trix-dialog {
+    background: #2f2f2f;
+    border-radius: 12px;
+    padding: 24px;
+    border: solid 1px #444;
+    box-shadow: rgba(0, 0, 0, 0.104) 5px 5px 10px 0px;
+}
+
+trix-toolbar .trix-input--dialog {
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 10px;
+    background-color: #222;
+    margin: 0;
+    border-radius: 8px;
+    height: 8px;
+    color: #999;
+    box-sizing: border-box;
+    padding: 24px 10px;
+}

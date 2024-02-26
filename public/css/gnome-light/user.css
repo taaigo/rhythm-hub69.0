@@ -1,0 +1,72 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.inner_container {
+    height: 100%;
+}
+
+.text_username {
+    color: #ffa8ed;
+    font-size: 40px;
+    margin: 0 20px;
+    display: inline;
+}
+
+.profile-picture {
+    object-fit: cover;
+    border-radius: 30px;
+    width: 160px;
+    height: 160px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#song_page_back_button_line {
+    margin-bottom: 14px;
+}
+
+.aboutme-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutme-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutme-content {
+    font-size: 18px;
+    background-color: #222;
+    border: solid 1px #ffbef6;
+    padding: 8px;
+    border-radius: 12px;
+    margin: 0px;
+    max-width: fit-content;
+
+    text-overflow: overflow;
+    /* text-overflow: ellipsis ellipsis; */
+}
+
+pre {
+    background-color: #4d4d4d;
+    border-radius: 8px;
+    margin: 0;
+    padding: 6px;
+}

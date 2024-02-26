@@ -20,12 +20,14 @@ class UserController extends Controller
 
         if ($u) {
             if ($id == Auth::user()->id) {
-                return view('users.your-profile', [
+                return view('users.show', [
                     'user' => User::find($id),
+                    'isme' => true,
                 ]);
             } else {
                 return view('users.show', [
                     'user' => User::find($id),
+                    'isme' => false,
                 ]);
             }
         }

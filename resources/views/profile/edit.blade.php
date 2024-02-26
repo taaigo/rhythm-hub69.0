@@ -3,7 +3,12 @@
 @section('title', $user->username.'\'s profile')
 @section('container-title', 'User Settings')
 @section('style')
-<link rel="stylesheet" href="{{ asset('css/user-settings.css') }}">
+user-settings.css
+@endsection
+
+@section('head')
+<script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
 @endsection
 
 @section('content')

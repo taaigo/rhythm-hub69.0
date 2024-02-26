@@ -14,7 +14,11 @@
         @method('patch')
 
         <div>
-            <textarea cols="35" rows="15" id="update-profile-description" name="description" type="textarea" class="input_text-field"></textarea>
+            <!--<textarea cols="35" rows="15" id="update-profile-description" name="description" type="textarea" class="input_text-field"></textarea> -->
+            
+            <input id="x" name="description">
+            <trix-editor input="x" class="textfield">
+            </trix-editor>
         </div>
 
         <div class="flex items-center gap-4">

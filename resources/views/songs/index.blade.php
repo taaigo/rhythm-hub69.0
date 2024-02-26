@@ -3,7 +3,7 @@
 @section('title', 'songs')
 @section('container-title', 'Songs')
 @section('style')
-<link rel="stylesheet" href="{{ asset('css/songs.css') }}">
+songs.css
 @endsection
 
 @section('content')
@@ -11,13 +11,13 @@
     @if(count($songs) == 0)
 
     @endif
-    
+
     @foreach($songs as $song)
         <x-songs.song-card :song="$song" />
     @endforeach
 </div>
     @endsection
-    
+
     @section('pagination')
     <div class="container paginator_container">
         {{ $songs->links('vendor.pagination.default') }}

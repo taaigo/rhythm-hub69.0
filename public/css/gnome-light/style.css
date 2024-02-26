@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: #fdfdfd;
+    box-shadow: rgba(0, 0, 0, 0.007) 5px 5px 10px;
+    border-radius: 22px;
+    margin: 0;
+    padding: 24px;
+    height: 100%;
+}
+
+.input_button {
+    border: none;
+    text-decoration: none;
+    background-color: #fc5af7;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    border-radius: 6px;
+    transition: ease 300ms;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 0;
+    cursor: pointer;
+}
+.input_button:hover {
+    background-color: #ed9eeb;
+    color: #000000;
+    cursor: pointer;
+}
+
+.dangerous-button {
+    background-color: #e01111;
+}
+
+.dangerous-button:hover {
+    background-color: #bf0606;
+}
+
+.input_button:active {
+    background-color: #a82d77;
+    text-shadow: #d740be 5px 5px;
+}
+
+.input_text-field {
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 10px;
+    background-color: #222;
+    margin: 0;
+    border-radius: 8px;
+    height: 8px;
+    color: #c1c1c1
+    box-sizing: border-box;
+    padding: 24px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text_page-title {
+    font-size: 38px;
+    margin: 12px 0;
+    color: #fc5af7;
+}
+
+.text_sub-title {
+    font-size: 24px;
+    margin: 8px 0;
+    color: #fcd1f8;
+}
+
+.text_sub {
+    font-size: 18px;
+    color: #2d2d2d;
+}
+
+.text_sub_grey {
+    font-size: 18px;
+    color: #b5b5b5;
+}
+
+.text_error {
+    font-size: 16px;
+    text-align: center;
+    color: #e01111;
+}
+
+.text_warning {
+    font-size: 16px;
+    text-align: center;
+    color: #e0cf11;
+}
+
+.text_success-text {
+    font-size: 16px;
+    text-align: center;
+    color: #11e014;
+}
+
+.paginator_container {
+    width: 700px;
+    margin-top: 8px;
+}
+
+.paginator_container {
+    padding: 0;
+    width: 40px;;
+}
+
+ul.pagination {
+    background: none;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+div.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li.disabled {
+    list-style-type: none;
+}
+
+a.pagination, span {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 22px;
+    margin: 6px;
+    color: #d2d2d2;
+    height: 26px;
+    margin-top: 26px;
+}
+
+span.pagination {
+    color: #fc5af7;
+}
+
+a.pagination:hover {
+    color: #ff7ff3;
+}
+
+.arrow {
+    color: #ff7ff3;
+}
+
+span.arrow, a.arrow {
+font-size: 59px;
+}
+
+.arrow {
+    color: #d2d2d2;
+}
+
+span.greyed, span.greyed:hover {
+    cursor: default;
+    color: #545454;
+}
+
+#song_back_button {
+    width: 50px;
+    font-size: 18px;
+}
+
+.back_button {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid #f658ee60 1px;
+}
+
+#song_page_back_button_line {
+    display: flex;
+    border-bottom: #f572e47b solid 1px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.tripple-section-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 100px;
+}

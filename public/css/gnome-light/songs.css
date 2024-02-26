@@ -1,0 +1,99 @@
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+    transition: ease 500ms;
+    border-radius: 15px;
+    width: 110px;
+    height: 110px;
+}
+
+.container {
+    min-width: 515px;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tripple-section-container {
+    width: 57%;
+}
+
+.arrange_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex_element {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+    transition: ease 100ms;
+    height: 110px;
+    width: 500px;
+}
+
+.flex_element:hover img {
+    width: 124px;
+    height: 124px;
+    outline: #fc5af7 solid 2px;
+    z-index: 2;
+}
+
+.flex_element:hover {
+    background-color: #fcb3fa;
+    outline: #fc5af7 solid 1px;
+}
+
+.song_header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 379px;
+}
+
+.song_title {
+    font-size: 20px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Varela Round', sans-serif;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.song_artist {
+    font-family: 'Varela Round', sans-serif;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.song_bpm {
+    font-family: 'Varela Round', sans-serif;
+    color: #3a3a3a;
+    margin: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.18);
+    justify-self: flex-end;
+    text-align: right;
+}

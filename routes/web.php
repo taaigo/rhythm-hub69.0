@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ThemeController;
 use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/u/edit', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/u/edit', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::post('/edit/theme', [ThemeController::class, 'setTheme'])->name('edit.theme');
+
 
 Route::patch('/u/edit/description', [DescriptionController::class, 'update'])->middleware('auth')->name('description.update');
 
