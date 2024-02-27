@@ -41,10 +41,6 @@
     transition: 200ms ease;
 }
 
-.input_text-field:hover, .input_text-field:focus {
-    color: #f572e3;
-}
-
 .login_bottom {
     height: max-content;
 }

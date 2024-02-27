@@ -37,16 +37,16 @@ img {
 }
 
 .flex_element {
-    background-color: #fff;
+    background-color: #eee;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     margin: 10px;
     border-radius: 16px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
     transition: ease 100ms;
     height: 110px;
     width: 500px;
+    outline: solid 2px #e6e6e6;
 }
 
 .flex_element:hover img {

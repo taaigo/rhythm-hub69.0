@@ -35,5 +35,7 @@
     <select id="theme" name="theme" onchange="this.form.submit()">
       <option value="gnome-dark" @if ($_COOKIE['theme'] === "gnome-dark") selected @endif>Gnome dark</option>
       <option value="gnome-light" @if ($_COOKIE['theme'] === "gnome-light") selected @endif>Gnome light</option>
+      <option value="minimal" @if ($_COOKIE['theme'] === "minimal") selected @endif>Minimal</option>
+      <option value="yotsuba" @if ($_COOKIE['theme'] === "yotsuba") selected @endif>Yotsuba</option>
     </select> <noscript><input type="submit" value="submit"></noscript>
 </form>

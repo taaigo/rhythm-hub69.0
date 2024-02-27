@@ -1,0 +1,37 @@
+img {
+    height: 140px;
+    width: 140px;
+}
+
+.flex_element {
+    outline: solid 1px #DA8FA8;
+    background-color: #F8DDE6;
+    padding: 10px;
+    margin: 14px;
+}
+
+.image_avatar-small-round {
+    display: none;
+}
+
+.tripple-section-container {
+    width: 700px;
+    margin: 10px;
+}
+
+.usercard_uploader_image {
+    display: none;
+}
+
+.comment_user_image {
+    width: 50px;
+    height: 50px;
+}
+
+.comment_content {
+    margin: 12px;
+    width: fit-content;
+    padding: 8px;
+    border: solid 1px #DA8FA8;
+    background-color: #F8DDE6;
+}

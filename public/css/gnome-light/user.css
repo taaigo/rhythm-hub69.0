@@ -8,7 +8,7 @@
 }
 
 .text_username {
-    color: #ffa8ed;
+    color: #fc5af7;
     font-size: 40px;
     margin: 0 20px;
     display: inline;
@@ -53,8 +53,8 @@
 
 .aboutme-content {
     font-size: 18px;
-    background-color: #222;
-    border: solid 1px #ffbef6;
+    background-color: #eee;
+    border: solid 2px #e6e6e6;
     padding: 8px;
     border-radius: 12px;
     margin: 0px;

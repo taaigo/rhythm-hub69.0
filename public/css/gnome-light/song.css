@@ -50,8 +50,8 @@ div.song_information_box {
 }
 
 .usercard_uploader {
-    background-color: #303030;
-    border: #696969 solid 1px;
+    background-color: #ddd;
+    border: #ccc solid 2px;
     align-items: center;
     width: 320px;
     border-radius: 12px;
@@ -76,7 +76,7 @@ div.song_information_box {
 .comment_content {
     display: flex;
     flex-direction: column;
-    background-color: #282828;
+    background-color: #eee;
     border-radius: 12px;
     padding: 8px;
     margin: 8px 0;
@@ -84,7 +84,7 @@ div.song_information_box {
 
 #head {
     display: flex;
-    justify-content: space-between;
+    juseeeontent: space-between;
 }
 
 #date {
@@ -102,7 +102,7 @@ div.song_information_box {
 #content {
     font-family: 'Varela Round', sans-serif;
     font-size: 18px;
-    color: #cbcbcb;
+    color: #000000;
     margin: 8px;
 }
 
